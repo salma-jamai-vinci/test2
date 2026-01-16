@@ -57,6 +57,12 @@ describe("PasswordChecker", () => {
 
       expect(actual).toBe(true);
     });
+
+    it("should return true when given 9 characters", () => {
+      const actual = passwordChecker.isValid("abcdefghi");
+
+      expect(actual).toBe(true);
+    });    
   });
 
   describe("check password contains special character", () => {
